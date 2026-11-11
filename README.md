@@ -3,6 +3,8 @@
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://hacs.xyz/docs/faq/custom_repositories)
 [![tests](https://github.com/TekservixHQ/ha-waservix/actions/workflows/tests.yml/badge.svg)](https://github.com/TekservixHQ/ha-waservix/actions/workflows/tests.yml)
 
+**WAservix WhatsApp API Gateway** for Home Assistant (HACS): WhatsApp alerts from your own number and automations on incoming messages. By Tekservix.
+
 Send WhatsApp alerts from Home Assistant using your own WhatsApp number with [WAservix](https://tekservix.com/waservix/), and trigger automations when a WhatsApp message arrives.
 
 WAservix links your number by QR code (the same way WhatsApp Web does) and gives you an API, so Home Assistant can send camera snapshots, reports and alerts to you, your family or a WhatsApp group, and react to messages like "STATUS" or "LIGHTS OFF".
