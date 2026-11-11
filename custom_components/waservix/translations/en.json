@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "WAservix",
+        "description": "Send WhatsApp messages from your own number. You need a Tekservix account with WAservix and the API key of your number (Devices in the dashboard).",
+        "data": {
+          "api_key": "API key of your number",
+          "recipient": "Default recipient for notify (number or group JID)",
+          "webhook_secret": "Webhook secret of your number (to receive messages)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "The API key was not accepted.",
+      "cannot_connect": "Could not reach WAservix."
+    },
+    "abort": {
+      "already_configured": "This number is already set up."
+    }
+  },
+  "services": {
+    "send_message": {
+      "name": "Send WhatsApp message",
+      "description": "Send a WhatsApp text, image or document from your number.",
+      "fields": {
+        "to": { "name": "To", "description": "Number in international format, or a group JID ending in @g.us." },
+        "message": { "name": "Message", "description": "Text, or the caption for an image or document." },
+        "image_url": { "name": "Image URL", "description": "Public https link to an image." },
+        "document_url": { "name": "Document URL", "description": "Public https link to a document." },
+        "file_name": { "name": "File name", "description": "Name shown for the document." }
+      }
+    }
+  }
+}

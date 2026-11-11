@@ -1,0 +1,24 @@
+send_message:
+  fields:
+    to:
+      required: true
+      example: "+15551234567"
+      selector:
+        text:
+    message:
+      example: "The front door was opened"
+      selector:
+        text:
+          multiline: true
+    image_url:
+      example: "https://example.com/camera.jpg"
+      selector:
+        text:
+    document_url:
+      example: "https://example.com/report.pdf"
+      selector:
+        text:
+    file_name:
+      example: "report.pdf"
+      selector:
+        text:
